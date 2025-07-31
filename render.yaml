@@ -2,11 +2,13 @@ services:
   - type: web
     name: htn-app
     env: node
+    buildCommand: |
+      cd frontend && npm install && npm run build && cd ..
+      cd backend && npm install && cd ..
+      cp -r frontend/dist/* backend/public/
+    startCommand: node backend/server.js
+    rootDir: ./
     plan: free
-    buildCommand: npm install && npm run build
-    startCommand: npm start
     envVars:
       - key: NODE_VERSION
         value: 18
-    autoDeploy: true
-    region: oregon
