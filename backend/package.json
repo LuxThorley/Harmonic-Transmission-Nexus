@@ -1,17 +1,17 @@
 {
   "name": "htn-backend",
   "version": "1.0.0",
+  "description": "Backend server for HTN: Harmonic Transmission Nexus",
   "main": "server.js",
-  "dependencies": {
-<<<<<<< HEAD
-    "cors": "^2.8.5",
-    "express": "^4.21.2"
-=======
-    "express": "^4.18.2",
-    "cors": "^2.8.5"
->>>>>>> 51aaee33635e10c22188b6d240a34b535352f9b9
-  },
   "scripts": {
     "start": "node server.js"
+  },
+  "author": "Lux Thorley",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "morgan": "^1.10.0"
   }
 }
