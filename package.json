@@ -1,0 +1,8 @@
+{
+  "name": "htn-root",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build && cd .. && cp -r frontend/dist/* backend/public",
+    "start": "cd backend && npm install && node server.js"
+  }
+}
