@@ -12,7 +12,7 @@ function App() {
       autoplay: true,
       controls: true,
       sources: [{
-        src: 'http://localhost:10000/live/stream.m3u8',
+        src: 'https://harmonic-transmission-nexus.onrender.com/stream.m3u8',
         type: 'application/x-mpegURL'
       }]
     });
